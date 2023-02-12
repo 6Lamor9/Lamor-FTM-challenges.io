@@ -1,0 +1,155 @@
+
+body {
+    background-color: hsl(185, 75%, 39%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    overflow: hidden;
+
+}
+#bg-pattern-top {
+    position: absolute;
+    bottom: 37%;
+    right: 55%;
+}
+#bg-pattern-bottom {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.conter {
+    border-radius: 15px;
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-image: url("images/bg-pattern-card.svg");
+    background-repeat: no-repeat;
+    font-family:  sans-serif;
+}
+#profile_pic {
+    border-radius: 50%;
+    border: solid 5px white;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.about {
+    width: 150px;
+    border: solid 1px rgb(255, 255, 255);
+    text-align: center;
+    margin: auto;
+    margin-top: 55%;
+    font-family: sans-serif;
+}
+
+p , .no {
+    font-size: 16px;
+    color: gray;
+}
+
+span {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: rgb(128, 128, 128, 0.3);
+}
+
+
+
+.info_conter {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: solid 1px black; */
+    width: 100%;
+    height: 100px;
+    /* padding: 10px; */
+    padding-top: 10px;
+}
+.info{
+    height: 80%;
+    font-family: inherit;
+    text-align: center;
+}
+
+
+
+
+/* phone */
+@media only screen and (max-width: 768px){
+    #bg-pattern-top {
+        position: absolute;
+        bottom: 30%;
+        right: 50%;
+    }
+    #bg-pattern-bottom {
+        position: absolute;
+        left: 40%;
+        top: 30%;
+    } 
+    .conter {
+        border-radius: 15px;
+        max-width: 90%;
+        height: 400px;
+        background-color: white;
+        z-index: 10;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: url("images/bg-pattern-card.svg");
+        background-repeat: no-repeat;
+    }
+    #profile_pic {
+        border-radius: 50%;
+        border: solid 5px white;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+@media only screen and (max-width: 320px){
+    .about {
+        padding-top: 32px;
+        width: 100%;
+        border: solid 1px transparent;
+        margin-top: 45%;
+        height: 5rem;
+    }
+    #profile_pic {
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%); 
+    }
+    .info_conter {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        padding-top: 10px;
+    }
+    .info{
+        height: 80%;
+        margin: 10px;
+        font-family: inherit;
+        text-align: center;
+    }
+    .conter {
+        height: 350px;
+    }
+ 
+}
